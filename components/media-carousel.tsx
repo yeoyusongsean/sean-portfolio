@@ -51,9 +51,10 @@ export type MediaItem = {
 type MediaCarouselProps = {
   items: MediaItem[];
   className?: string;
+  enableFullscreen?: boolean;  // Set to false to disable fullscreen on click (default: true)
 };
 
-export function MediaCarousel({ items, className = "" }: MediaCarouselProps) {
+export function MediaCarousel({ items, className = "", enableFullscreen = true }: MediaCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -128,13 +129,13 @@ export function MediaCarousel({ items, className = "" }: MediaCarouselProps) {
         {/* Media Display */}
         <div className="relative aspect-video">
           {currentItem.type === "image" ? (
-            /* Image - Click to open fullscreen */
+            /* Image - Click to open fullscreen (if enabled) */
             <Image
               src={currentItem.src || "/placeholder.svg"}
               alt={currentItem.alt || "Project image"}
               fill
-              className="object-cover cursor-pointer"
-              onClick={openFullscreen}
+              className={`object-cover ${enableFullscreen ? "cursor-pointer" : ""}`}
+              onClick={enableFullscreen ? openFullscreen : undefined}
             />
           ) : (
             /* Video with native HTML5 controls */
@@ -199,8 +200,8 @@ export function MediaCarousel({ items, className = "" }: MediaCarouselProps) {
         </div>
       </div>
 
-      {/* Fullscreen Modal */}
-      {isFullscreen && (
+      {/* Fullscreen Modal - Only rendered if enableFullscreen is true */}
+      {enableFullscreen && isFullscreen && (
         <div 
           className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex flex-col"
           onClick={handleBackdropClick}

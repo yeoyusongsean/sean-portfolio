@@ -216,13 +216,13 @@ export function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<OtherProject | null>(null);
 
   const goToPrevProject = () => {
-    setCurrentProjectIndex((prev) =>
+    setCurrentProjectIndex((prev) => 
       prev === 0 ? featuredProjects.length - 1 : prev - 1
     );
   };
 
   const goToNextProject = () => {
-    setCurrentProjectIndex((prev) =>
+    setCurrentProjectIndex((prev) => 
       prev === featuredProjects.length - 1 ? 0 : prev + 1
     );
   };
@@ -287,9 +287,9 @@ export function ProjectsSection() {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-0">
-              {/* Media Carousel */}
+              {/* Media Carousel - Fullscreen disabled for featured projects */}
               <div className="border-b lg:border-b-0 lg:border-r border-border">
-                <MediaCarousel items={currentProject.media} />
+                <MediaCarousel items={currentProject.media} enableFullscreen={false} />
               </div>
 
               {/* Project Info */}
@@ -304,7 +304,7 @@ export function ProjectsSection() {
                   <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4 sm:mb-6">
                     {currentProject.description}
                   </p>
-
+                  
                   <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
                     {currentProject.tech.map((tech) => (
                       <span
@@ -346,10 +346,11 @@ export function ProjectsSection() {
                 key={project.title}
                 type="button"
                 onClick={() => setCurrentProjectIndex(index)}
-                className={`w-2 h-2 rounded-full transition-colors ${index === currentProjectIndex
-                  ? "bg-primary"
-                  : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                  }`}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  index === currentProjectIndex
+                    ? "bg-primary"
+                    : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                }`}
                 aria-label={`Go to ${project.title}`}
               />
             ))}
@@ -418,11 +419,11 @@ export function ProjectsSection() {
 
       {/* ===== PROJECT DETAIL MODAL ===== */}
       {selectedProject && (
-        <div
+        <div 
           className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={() => setSelectedProject(null)}
         >
-          <div
+          <div 
             className="bg-card border border-border rounded-lg w-full max-w-lg max-h-[80vh] overflow-hidden animate-in fade-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
