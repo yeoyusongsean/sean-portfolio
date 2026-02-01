@@ -192,10 +192,9 @@ const otherProjects: OtherProject[] = [
     fullDescription: "Engineered an end-to-end automation bot to process Goods Receipts (GRs), integrating Outlook for automated communication and saving the department an estimated 10+ man-hours weekly. The solution automates data extraction from SAP, validates entries against business rules, and sends consolidated reports to key appointment holders.",
     tech: ["RPA", "Kryon Studios"],
     // Add links and media as needed:
-    // links: [
-    //   { type: "docs", url: "/src/documents/project.pdf" },
-    //   { type: "docs", url: "/src/documents/project.pdf" }
-    // ],
+    links: [
+      { type: "docs", url: "/src/projects/hdb/RPA_GR_Process.pdf", label:"Process Worflow" },
+    ],
     // media: [
     //   { type: "image", src: "/src/projects/workflow/screenshot1.png", alt: "Workflow Dashboard" },
     //   { type: "image", src: "/src/projects/workflow/screenshot2.png", alt: "Report Output" },
