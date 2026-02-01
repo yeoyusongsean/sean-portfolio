@@ -33,6 +33,10 @@ const profileImages = [
     src: "/src/profilepic/temp_pic.jpg?height=400&width=400",
     alt: "Placeholder Picture",
   },
+  {
+    src: "/src/profilepic/glamshot.jpg?height=400&width=400",
+    alt: "Glamour",
+  },
 ];
 
 

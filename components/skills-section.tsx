@@ -109,7 +109,25 @@ const skillCategories: SkillCategory[] = [
       }
     ],
   },
+
+  // ===== CERTIFICATION =====
+  {
+    name: "certification",
+    displayType: "list",
+    items: [
+      {
+        name: "Google UX Design Specialization",
+        description: "Completed in Dec 2025",
+      },
+      {
+        name: "Kryon Studios",
+        description: "Completed in Jun 2021",
+      },
+    ],
+  },
 ];
+
+
 
 // Returns the status icon based on coursework status
 function getStatusIcon(status?: "completed" | "in-progress" | "planned") {
@@ -238,7 +256,7 @@ export function SkillsSection() {
                 <div className="space-y-3 sm:space-y-4">
                   <div className="font-mono text-xs sm:text-sm text-muted-foreground mb-4">
                     <span className="text-syntax-comment">{"// "}</span>
-                    Relevant coursework and learning
+                    Relevant coursework & certification
                   </div>
                   {(currentCategory as ListCategory).items.map((item, index) => (
                     <div

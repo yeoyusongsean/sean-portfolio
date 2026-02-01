@@ -33,7 +33,7 @@ import { ExperienceSection } from "./experience-section";
 import { ProjectsSection } from "./projects-section";
 import { ContactSection } from "./contact-section";
 
-type TabId = "home" | "about" | "skills" | "experience" | "projects" | "contact";
+type TabId = "home" | "about" | "skills" | "experiences" | "projects" | "contact";
 
 /**
  * TAB CONFIGURATION
@@ -47,7 +47,7 @@ const tabs = [
   { id: "home" as TabId, label: "home", icon: Home, file: "index.tsx" },
   { id: "about" as TabId, label: "about", icon: User, file: "about.tsx" },
   { id: "skills" as TabId, label: "skills", icon: Code2, file: "skills.tsx" },
-  { id: "experience" as TabId, label: "experience", icon: Briefcase, file: "experience.tsx" },
+  { id: "experiences" as TabId, label: "experiences", icon: Briefcase, file: "experiences.tsx" },
   { id: "projects" as TabId, label: "projects", icon: FolderGit2, file: "projects.tsx" },
   { id: "contact" as TabId, label: "contact", icon: Mail, file: "contact.tsx" },
 ];
@@ -208,7 +208,7 @@ export function PortfolioTabs() {
           {activeTab === "home" && <HeroSection onNavigate={handleTabChange} />}
           {activeTab === "about" && <AboutSection />}
           {activeTab === "skills" && <SkillsSection />}
-          {activeTab === "experience" && <ExperienceSection />}
+          {activeTab === "experiences" && <ExperienceSection />}
           {activeTab === "projects" && <ProjectsSection />}
           {activeTab === "contact" && <ContactSection />}
         </div>

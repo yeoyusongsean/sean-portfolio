@@ -23,7 +23,7 @@ const codeLines = [
 ];
 
 type HeroSectionProps = {
-  onNavigate?: (tab: "home" | "about" | "skills" | "experience" | "projects" | "contact") => void;
+  onNavigate?: (tab: "home" | "about" | "skills" | "experiences" | "projects" | "contact") => void;
 };
 
 export function HeroSection({ onNavigate }: HeroSectionProps) {
@@ -186,11 +186,11 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
 
             {/* Quick Navigation */}
             <div className="flex flex-wrap gap-2 pt-2 sm:pt-4">
-              {["about", "skills", "experience", "projects", "contact"].map((tab) => (
+              {["about", "skills", "experiences", "projects", "contact"].map((tab) => (
                 <button
                   key={tab}
                   type="button"
-                  onClick={() => onNavigate?.(tab as "about" | "skills" | "experience" | "projects" | "contact")}
+                  onClick={() => onNavigate?.(tab as "about" | "skills" | "experiences" | "projects" | "contact")}
                   className="px-3 sm:px-4 py-1.5 sm:py-2 bg-secondary rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors font-mono text-xs sm:text-sm"
                 >
                   <span className="text-syntax-comment">{"// "}</span>

@@ -88,7 +88,7 @@ export function ExperienceSection() {
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
             <span className="text-syntax-keyword">{"git"}</span>{" "}
             <span className="text-syntax-function">log</span>
-            <span className="text-muted-foreground">{" --oneline experience"}</span>
+            <span className="text-muted-foreground">{" --oneline experiences"}</span>
           </h2>
           <p className="text-muted-foreground mt-2 font-mono text-xs sm:text-sm">
             <span className="text-syntax-comment">{"// "}</span>

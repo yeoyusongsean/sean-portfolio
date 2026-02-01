@@ -126,7 +126,7 @@ const featuredProjects: FeaturedProject[] = [
       "A high-fidelity interactive protoype featuring a dedicated mobile marketplace app to consolidate and promote small homebased businesses. Built to learn UI designs on Figma.",
     tech: ["Figma", "Maze"],
     links: [
-      { type: "demo", url: "https://www.figma.com/proto/yzAeZvLcuVfYhWrszyMnk9/Hustle-Fidelity?node-id=1171-10682&p=f&t=UkKYF77uhkGBBMPQ-1&scaling=scale-down&content-scaling=fixed&page-id=1029%3A10016&starting-point-node-id=1171%3A10682&show-proto-sidebar=1", },
+      { type: "other", url: "https://www.figma.com/proto/yzAeZvLcuVfYhWrszyMnk9/Hustle-Fidelity?node-id=1171-10682&p=f&t=UkKYF77uhkGBBMPQ-1&scaling=scale-down&content-scaling=fixed&page-id=1029%3A10016&starting-point-node-id=1171%3A10682&show-proto-sidebar=1", label: "Figma"},
       { type: "demo", url: "https://youtu.be/BnnhDKt-TBo?si=GloNiLxhlTVvb2oT", label:"Youtube Demo" },
     ],
     media: [
@@ -144,7 +144,7 @@ const featuredProjects: FeaturedProject[] = [
     tech: ["Vue.js", "JavaScript", "HTML/CSS", "GitHub", "Firebase"],
     links: [
       { type: "github", url: "https://github.com/jeniffer-joyce/HousebibiGoWhere" },
-      { type: "other", url: "https://craftconnect-3b52c.web.app", label: "Live Website" },
+      { type: "website", url: "https://craftconnect-3b52c.web.app", label: "Live Website" },
       { type: "demo", url: "https://youtu.be/OZwoBpurGP0", label:"Youtube Demo" },
     ],
     media: [
