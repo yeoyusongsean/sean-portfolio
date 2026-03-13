@@ -57,7 +57,7 @@ const highlights = [
   {
     icon: Cpu,
     title: "Competitions",
-    items: ["AfterClass UI Hackathon 2025"],
+    items: ["AfterClass UI Hackathon 2025", "Elastic Hackathon - Forge the Future"],
   },
   {
     icon: Trophy,
