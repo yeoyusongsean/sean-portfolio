@@ -20,22 +20,23 @@ const AUTO_ROTATE_INTERVAL = 3000;
  * - Compress images for faster loading (use tinypng.com)
  * - Add alt text for accessibility
  */
+
 const profileImages = [
   {
-    src: "/src/profilepic/main_pic.jpg?height=400&width=400",
-    alt: "Professional Pic",
+    src: "/src/profilepic/main_soft.jpg?height=400&width=400",
+    alt: "Aesthetic Main",
   },
   {
     src: "/src/profilepic/cute_pic.jpg?height=400&width=400",
     alt: "Felt cute, might delete later..",
   },
   {
-    src: "/src/profilepic/temp_pic.jpg?height=400&width=400",
-    alt: "Placeholder Picture",
+    src: "/src/profilepic/mew.jpg?height=400&width=400",
+    alt: "Questionable HAHAHAHAH",
   },
   {
     src: "/src/profilepic/glamshot.jpg?height=400&width=400",
-    alt: "Glamour",
+    alt: "Glamour Patrons Day 2026",
   },
 ];
 
@@ -57,7 +58,7 @@ const highlights = [
   {
     icon: Cpu,
     title: "Competitions",
-    items: ["AfterClass UI Hackathon 2025", "Elastic Hackathon - Forge the Future"],
+    items: ["AfterClass UI Hackathon 2026", "Elastic Hackathon - Forge the Future"],
   },
   {
     icon: Trophy,

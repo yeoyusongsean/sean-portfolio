@@ -207,6 +207,24 @@ const otherProjects: OtherProject[] = [
     fullDescription: "Developed an automation solution for reconciling parking transaction data across multiple systems. The bot compares records from Parking.SG with internal databases, flags discrepancies, and generates detailed exception reports. Reduced manual verification time by 80% and improved accuracy of financial reporting.",
     tech: ["RPA", "Kryon Studios"],
   },
+  {
+    title: "Secondhand Heros",
+    description: "Shape a Better World - Use innovation to uplift communities and causes.",
+    fullDescription: "Developed during an AWS-partnered hackathon, our team applied the 'Dream Bold, Build Smart' philosophy to address the 'pay-to-play' barrier that sidelines student-athletes due to high equipment costs. We engineered a sustainable platform to repurpose idle gear, demonstrating how purpose-driven technology and collaborative innovation can bridge financial gaps and strengthen community bonds.",
+    tech: ["AWS Bedrock", "Elastic Search AI"],
+    links: [
+      { type: "docs", url: "/src/projects/elastichackathon2026/Full Slacker - Pitch Deck.pdf", label:"Pitch Deck" },
+      { type: "github", url: "https://github.com/jiaqianwan/elastichackathon", label:"GitHub" }
+    ],
+    media: [
+      { type: "image", src: "/src/projects/elastichackathon2026/home.png", alt: "Home Page" },
+      { type: "image", src: "/src/projects/elastichackathon2026/grade.jpg", alt: "Donate Page" },
+      { type: "image", src: "/src/projects/elastichackathon2026/item.jpg", alt: "Item Grader" },
+      { type: "image", src: "/src/projects/elastichackathon2026/your_impact.png", alt: "Profile Page" },
+      { type: "image", src: "/src/projects/elastichackathon2026/collection.png", alt: "Collection Page" },
+    ],
+
+  }
 ];
 
 export function ProjectsSection() {
